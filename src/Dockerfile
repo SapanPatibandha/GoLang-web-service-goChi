@@ -1,4 +1,4 @@
-FROM golang:1.14.6-alpine3.12 as builder
+FROM golang:alpine as builder
 COPY go.mod go.sum /go/src/gitlab.com/idoko/bucketeer/
 WORKDIR /go/src/gitlab.com/idoko/bucketeer
 RUN go mod download
